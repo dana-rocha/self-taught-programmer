@@ -1,4 +1,22 @@
 # gitignore file
+# Ignore all .idea files except:
+#
+# Version Control COnfiguration
+!vcs.xml
 
-*.idea
-*workspace.xml
+# How IntelliJ IDEA
+idea/
+/.idea/
+.idea/
+*.iml
+workspace.xml
+.idea/workspace.xml
+/**/.idea/workspace.xml
+
+# Automatic Code Formatting
+!codeStyleSettings.xml
+
+# Project Specific Words
+!copyrights
+!misc.xml
+!sqldialects.xml
