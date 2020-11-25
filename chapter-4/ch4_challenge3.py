@@ -5,7 +5,7 @@
 
 # Write a function that takes three required parameters and two optional parameters
 
-def calcu(a, d, x, , y = 2, z = 3):
+def calcu(a, d, x, y = 2, z = 3):
     """
     This function takes in 3 required parameters and two optional parameters. The function returns the sum
     of the parameters.
