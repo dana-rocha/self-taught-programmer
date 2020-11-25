@@ -158,3 +158,54 @@ def f():
     print(z)
 
 f()
+
+
+# Local Scope
+def f():
+    x = 1
+    y = 2
+    z = 3
+
+print(x) # Python raised an exception because the variables have local scope the to f() function
+print(y)
+print(z)
+
+
+# Local scope
+def f():
+    x = 1
+    y = 2
+    z = 3
+    print(x)
+    print(y)
+    print(z)
+
+f()
+
+# Trying to use a variable defined inside of a function outside of it, is similar
+# to using a variable that hasn't been defined yet
+
+if x > 100:
+    print("x is > 100")
+
+
+# Can write to a global variable from anywhere
+# Writing to a global variable inside of a local scope means you have to declare it
+
+x = 100
+
+def f():
+    global x
+    x += 1
+    print(x)
+
+f()
+
+
+# Exception Handling
+a = input("Type a number:")
+b = input("Type another:")
+a = int(a)
+b = int(b)
+
+print(a/b)
