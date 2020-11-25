@@ -203,9 +203,51 @@ f()
 
 
 # Exception Handling
+# Try and Except statements
 a = input("Type a number:")
 b = input("Type another:")
 a = int(a)
 b = int(b)
 
 print(a/b)
+
+
+# Python will raise an exception if the user inputs 0 for the second number or if the user enters a string
+
+# With exception handling:
+
+a = int(input("Type a number:"))
+b = int(input("Type another:"))
+
+try:
+    print(a/b)
+except ZeroDivisionError:
+    print("b cannot be zero")
+
+
+# With exception handling:
+try:
+    a = int(input("Type a number:"))
+    b = int(input("Type another:"))
+except (ZeroDivisionError, ValueError):
+    print("Invalid input!")
+
+
+# Docstrings
+# It is good practice to leave a docstring at the beginning of the function
+# explaining what data type each parameter needs to be
+
+def add(x, y):
+    """
+    Returns x + y.
+    :param x: int.
+    :param y: int.
+    :return: int sum of x and y.
+    """
+    return x + y
+
+
+
+
+
+
