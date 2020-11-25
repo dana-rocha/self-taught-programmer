@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python3
 
 # Chapter 4 Challege 4
 # By Dana Rocha 11/24/20
