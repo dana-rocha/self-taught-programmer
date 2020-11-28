@@ -5,4 +5,4 @@
 
  # Use a method to correct the string
 
- "aldous Huxley was born in 1894.".capitalize()
+"aldous Huxley was born in 1894.".capitalize()
