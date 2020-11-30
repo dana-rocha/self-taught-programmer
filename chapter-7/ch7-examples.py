@@ -124,6 +124,8 @@ print("Happy New Year!")
 
 
 # Can use a break statement to terminate a loop
+# As oon as Python hits the break-statement, the loop ends
+
 for i in range(0, 100):
     print(i)
     break
@@ -134,7 +136,6 @@ for i in range(0, 100):
 
 qs = ["What is your name?",
       "What is your fave color?",
-      "What is your fave animal?",
       "What is your quest?"]
 
 n = 0
@@ -145,3 +146,56 @@ while True:
     if a == "q":
         break
     n = (n + 1) % 3
+
+
+
+
+# Continue statements -  stop the current iteration of a loop and move on to the next iteration of it
+# print all the numbers 1 to 5 except for 3
+for i in range(1, 6):
+    # If i == 3, move on to the next i
+    if i == 3:
+        continue
+    print(i)
+
+
+# Can do the same thing using a while loop and a continue statement
+i = 1
+
+while i <= 5:
+    if i == 3:
+        i += 1
+        continue
+    print(i)
+    i += 1
+
+
+# Nested Loops
+# The inner loop iterates through its iterable once for each time around the outer loop
+
+for i in range(1, 3):
+    print(i)
+    for letter in ["a", "b", "c"]:
+        print(letter)
+
+
+
+# Iterating through a list with a nested for-loop
+# The first loop iterates through every integer in list1
+# For every variable j in the second loop, add it to the integer in list1 and append the result to added
+list1 = [1, 2, 3, 4]
+list2 = [5, 6, 7, 8]
+added = []
+
+for i in list1:
+    for j in list2:
+        added.append(i + j)
+
+print(added)
+
+
+#Nesting a for-loop inside a while-loop
+
+while input("y or n?") != "n":
+    for i in range(1, 6):
+        print(i)
