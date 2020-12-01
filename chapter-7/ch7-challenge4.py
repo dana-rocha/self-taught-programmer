@@ -5,7 +5,8 @@
 # By Dana Rocha 11/29/20
 
 # Write a program with an infinite loop (with the option to type q to quit) and a list of numbers
-# Each time through the loop ask the user to guess a number on the list and tell them whether or not they guessed correctly
+# Each time through the loop ask the user to guess a number on the list
+# and tell them whether or not they guessed correctly
 
 
 
